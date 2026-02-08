@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt - Boston Bruins Fan Shop</title>
+    <link rel="stylesheet" href="styles4.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>BOSTON BRUINS</h1>
+                <p>Official Fan Shop</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Domů</a></li>
+                    <li><a href="kategorie.html">Kategorie</a></li>
+                    <li><a href="o-nas.html">O nás</a></li>
+                    <li><a href="kontakt.html">Kontakt</a></li>
+                    <li><a href="kosik-krok1.html">Košík (0)</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="page-header">
+        <div class="container">
+            <h1>Kontakt</h1>
+            <p>Jsme tu pro vás. Neváhejte nás kontaktovat s jakýmkoliv dotazem.</p>
+        </div>
+    </section>
+
+    <section class="contact-page">
+        <div class="container">
+            <div class="contact-layout">
+                
+                <div class="contact-info-section">
+                    <div class="contact-card">
+                        <div class="contact-icon">📍</div>
+                        <h3>Adresa prodejny</h3>
+                        <p><strong>Boston Bruins Fan Shop</strong></p>
+                        <p>Václavské náměstí 123</p>
+                        <p>110 00 Praha 1</p>
+                        <p>Česká republika</p>
+                    </div>
+
+                    <div class="contact-card">
+                        <div class="contact-icon">🕐</div>
+                        <h3>Otevírací doba</h3>
+                        <div class="opening-hours">
+                            <div class="hours-row">
+                                <span class="day">Pondělí - Pátek:</span>
+                                <span class="time">10:00 - 19:00</span>
+                            </div>
+                            <div class="hours-row">
+                                <span class="day">Sobota:</span>
+                                <span class="time">10:00 - 16:00</span>
+                            </div>
+                            <div class="hours-row">
+                                <span class="day">Neděle:</span>
+                                <span class="time closed">Zavřeno</span>
+                            </div>
+                        </div>
+                        <p class="note">*Během zápasů může být otevírací doba upravena</p>
+                    </div>
+
+                    <div class="contact-card">
+                        <div class="contact-icon">📞</div>
+                        <h3>Telefonní kontakt</h3>
+                        <p><a href="tel:+420123456789" class="contact-link">+420 123 456 789</a></p>
+                        <p class="small-text">Po-Pá: 9:00 - 18:00</p>
+                    </div>
+
+                    <div class="contact-card">
+                        <div class="contact-icon">✉️</div>
+                        <h3>E-mail</h3>
+                        <p><a href="/cdn-cgi/l/email-protection#a3cacdc5cce3c1d1d6cacdd0d0cbccd38dc0d9" class="contact-link"><span class="__cf_email__" data-cfemail="442d2a222b042636312d2a37372c2b346a273e">[email&#160;protected]</span></a></p>
+                        <p class="small-text">Odpovídáme do 24 hodin</p>
+                    </div>
+
+                    <div class="contact-card">
+                        <div class="contact-icon">💬</div>
+                        <h3>Sociální sítě</h3>
+                        <div class="social-links-contact">
+                            <a href="#" class="social-link-item">
+                                <span class="social-icon">📘</span> Facebook
+                            </a>
+                            <a href="#" class="social-link-item">
+                                <span class="social-icon">📸</span> Instagram
+                            </a>
+                            <a href="#" class="social-link-item">
+                                <span class="social-icon">🐦</span> Twitter
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="map-placeholder">
+                        <div class="map-content">
+                           
+                            <p>Mapa prodejny</p>
+                        </div>
+                    </div>
+                </div>
+
+               
+                <div class="contact-form-section">
+                    <div class="form-container">
+                        <h2>Kontaktní formulář</h2>
+                        <p class="form-description">Máte dotaz? Vyplňte formulář níže a my se vám ozveme co nejdříve.</p>
+
+                        <form class="contact-form" method="post" action="#">
+                            <div class="form-group">
+                                <label for="name">Jméno a příjmení *</label>
+                                <input type="text" id="name" name="name" required placeholder="Jan Novák">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">E-mail *</label>
+                                <input type="email" id="email" name="email" required placeholder="jan.novak@email.cz">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="phone">Telefon</label>
+                                <input type="tel" id="phone" name="phone" placeholder="+420 123 456 789">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="subject">Předmět *</label>
+                                <select id="subject" name="subject" required>
+                                    <option value="">Vyberte předmět dotazu</option>
+                                    <option value="objednavka">Dotaz k objednávce</option>
+                                    <option value="produkt">Dotaz k produktu</option>
+                                    <option value="reklamace">Reklamace</option>
+                                    <option value="dostupnost">Dostupnost zboží</option>
+                                    <option value="velikost">Poradenství s velikostí</option>
+                                    <option value="platba">Platba a doprava</option>
+                                    <option value="jine">Jiný dotaz</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="order-number">Číslo objednávky (pokud je relevantní)</label>
+                                <input type="text" id="order-number" name="order-number" placeholder="např. #BB-2025-001234">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message">Vaše zpráva *</label>
+                                <textarea id="message" name="message" rows="6" required placeholder="Napište nám svůj dotaz..."></textarea>
+                            </div>
+
+                            <div class="form-checkbox">
+                                <input type="checkbox" id="gdpr" name="gdpr" required>
+                                <label for="gdpr">Souhlasím se zpracováním osobních údajů pro účely odpovědi na dotaz *</label>
+                            </div>
+
+                            <button type="submit" class="btn-primary">Odeslat zprávu</button>
+
+                            <p class="form-note">* Povinné pole</p>
+                        </form>
+                    </div>
+
+                    <div class="faq-quick">
+                        <h3>Rychlé odpovědi</h3>
+                        <div class="faq-item">
+                            <h4>Jak dlouho trvá doručení?</h4>
+                            <p>Zboží skladem odesíláme do 24 hodin. Standardní doprava trvá 1-3 pracovní dny.</p>
+                        </div>
+                        <div class="faq-item">
+                            <h4>Mohu si objednat produkt, který není skladem?</h4>
+                            <p>Ano, kontaktujte nás a rádi vám zjistíme dostupnost a termín dodání.</p>
+                        </div>
+                        <div class="faq-item">
+                            <h4>Jak poznám správnou velikost?</h4>
+                            <p>U každého produktu najdete tabulku velikostí. V případě nejistoty nám napište.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>O nás</h4>
+                    <p>Oficiální fan shop Boston Bruins pro české a slovenské fanoušky.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Kontakt</h4>
+                    <p>Email: <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="e58c8b838aa58797908c8b96968d8a95cb869f">[email&#160;protected]</a></p>
+                    <p>Tel: +420 123 456 789</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Sledujte nás</h4>
+                    <p>Facebook | In

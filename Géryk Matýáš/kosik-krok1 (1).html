@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Košík - Dodací adresa - Boston Bruins Fan Shop</title>
+    <link rel="stylesheet" href="styles4.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>BOSTON BRUINS</h1>
+                <p>Official Fan Shop</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Domů</a></li>
+                    <li><a href="kategorie.html">Kategorie</a></li>
+                    <li><a href="kosik-krok1.html">Košík (2)</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="checkout-section">
+        <div class="container">
+            <h1 class="checkout-title">Dokončení objednávky</h1>
+            
+            
+            <div class="checkout-steps">
+                <div class="step active">
+                    <div class="step-number">1</div>
+                    <div class="step-label">Dodací adresa</div>
+                </div>
+                <div class="step-line"></div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <div class="step-label">Doprava a platba</div>
+                </div>
+                <div class="step-line"></div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <div class="step-label">Shrnutí objednávky</div>
+                </div>
+            </div>
+
+            <div class="checkout-container">
+                
+                <div class="checkout-form">
+                    <h2>Dodací adresa</h2>
+                    <form action="kosik-krok2.html" method="get">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="jmeno">Jméno a příjmení *</label>
+                                <input type="text" id="jmeno" name="jmeno" required placeholder="Jan Novák">
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">E-mail *</label>
+                                <input type="email" id="email" name="email" required placeholder="jan.novak@email.cz">
+                            </div>
+                            <div class="form-group">
+                                <label for="telefon">Telefon *</label>
+                                <input type="tel" id="telefon" name="telefon" required placeholder="+420 123 456 789">
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="ulice">Ulice a číslo popisné *</label>
+                                <input type="text" id="ulice" name="ulice" required placeholder="Hlavní 123">
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="mesto">Město *</label>
+                                <input type="text" id="mesto" name="mesto" required placeholder="Praha">
+                            </div>
+                            <div class="form-group">
+                                <label for="psc">PSČ *</label>
+                                <input type="text" id="psc" name="psc" required placeholder="120 00">
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="stat">Stát *</label>
+                                <select id="stat" name="stat" required>
+                                    <option value="">Vyberte stát</option>
+                                    <option value="CZ" selected>Česká republika</option>
+                                    <option value="SK">Slovensko</option>
+                                    <option value="AT">Rakousko</option>
+                                    <option value="DE">Německo</option>
+                                    <option value="PL">Polsko</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="poznamka">Poznámka k objednávce</label>
+                                <textarea id="poznamka" name="poznamka" rows="4" placeholder="Zde můžete uvést speciální požadavky k doručení..."></textarea>
+                            </div>
+                        </div>
+
+                        <div class="form-checkbox">
+                            <input type="checkbox" id="newsletter" name="newsletter">
+                            <label for="newsletter">Chci dostávat novinky a speciální nabídky</label>
+                        </div>
+
+                        <div class="form-actions">
+                            <a href="produkty.html" class="btn-back">← Zpět do obchodu</a>
+                            <button type="submit" class="btn-primary">Pokračovat na dopravu →</button>
+                        </div>
+                    </form>
+                </div>
+
+               
+                <div class="order-summary">
+                    <h2>Váš košík</h2>
+                    <div class="cart-items">
+                        <div class="cart-item">
+                            <div class="cart-item-image">
+                              
+                            </div>
+                            <div class="cart-item-details">
+                                <h4>Home Jersey 2025 - Pastrňák #88</h4>
+                                <p class="cart-item-specs">Velikost: L, Barva: Černá</p>
+                                <div class="cart-item-price-row">
+                                    <span class="cart-item-quantity">1× 2 499 Kč</span>
+                                    <span class="cart-item-price">2 499 Kč</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="cart-item">
+                            <div class="cart-item-image">
+                               
+                            </div>
+                            <div class="cart-item-details">
+                                <h4>Čepice s logem</h4>
+                                <p class="cart-item-specs">Velikost: Uni</p>
+                                <div class="cart-item-price-row">
+                                    <span class="cart-item-quantity">1× 599 Kč</span>
+                                    <span class="cart-item-price">599 Kč</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cart-summary">
+                        <div class="summary-row">
+                            <span>Mezisoučet:</span>
+                            <span>3 098 Kč</span>
+                        </div>
+                        <div class="summary-row">
+                            <span>Doprava:</span>
+                            <span class="text-muted">Bude vypočtena v dalším kroku</span>
+                        </div>
+                        <div class="summary-total">
+                            <span>Celkem:</span>
+                            <span>3 098 Kč</span>
+                        </div>
+                    </div>
+
+                    <div class="cart-benefits">
+                        <div class="benefit-item">
+                            <span class="benefit-icon">✓</span>
+                            <span>Bezpečná platba</span>
+                        </div>
+                        <div class="benefit-item">
+                            <span class="benefit-icon">✓</span>
+                            <span>Vrácení do 30 dnů</span>
+                        </div>
+                        <div class="benefit-item">
+                            <span class="benefit-icon">✓</span>
+                            <span>Oficiální merchandise</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>O nás</h4>
+                    <p>Oficiální fan shop Boston Bruins pro české a slovenské fanoušky.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Kontakt</h4>
+                    <p>Email: <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="2c45424a436c4e5e5945425f5f44435c024f56">[email&#160;protected]</a></p>
+                    <p>Tel: +420 123 456 789</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Sledujte nás</h4>
+                    <p>Facebook | Instagram | Twitter</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 202

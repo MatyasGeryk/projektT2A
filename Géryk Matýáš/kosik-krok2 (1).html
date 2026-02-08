@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Košík - Doprava a platba - Boston Bruins Fan Shop</title>
+    <link rel="stylesheet" href="styles4.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>BOSTON BRUINS</h1>
+                <p>Official Fan Shop</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Domů</a></li>
+                    <li><a href="kategorie.html">Kategorie</a></li>
+                    <li><a href="kosik-krok1.html">Košík (2)</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="checkout-section">
+        <div class="container">
+            <h1 class="checkout-title">Dokončení objednávky</h1>
+            
+           
+            <div class="checkout-steps">
+                <div class="step completed">
+                    <div class="step-number">✓</div>
+                    <div class="step-label">Dodací adresa</div>
+                </div>
+                <div class="step-line completed"></div>
+                <div class="step active">
+                    <div class="step-number">2</div>
+                    <div class="step-label">Doprava a platba</div>
+                </div>
+                <div class="step-line"></div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <div class="step-label">Shrnutí objednávky</div>
+                </div>
+            </div>
+
+            <div class="checkout-container">
+                
+                <div class="checkout-form">
+                    <h2>Způsob dopravy</h2>
+                    <div class="shipping-options">
+                        <label class="shipping-option">
+                            <input type="radio" name="doprava" value="zasilkovna" checked>
+                            <div class="option-content">
+                                <div class="option-header">
+                                    <span class="option-icon">📦</span>
+                                    <div class="option-info">
+                                        <strong>Zásilkovna</strong>
+                                        <p>Doručení na pobočku - 1-3 pracovní dny</p>
+                                    </div>
+                                </div>
+                                <div class="option-price">79 Kč</div>
+                            </div>
+                        </label>
+
+                        <label class="shipping-option">
+                            <input type="radio" name="doprava" value="ceska-posta">
+                            <div class="option-content">
+                                <div class="option-header">
+                                    <span class="option-icon">📮</span>
+                                    <div class="option-info">
+                                        <strong>Česká pošta</strong>
+                                        <p>Doručení na adresu - 2-4 pracovní dny</p>
+                                    </div>
+                                </div>
+                                <div class="option-price">99 Kč</div>
+                            </div>
+                        </label>
+
+                        <label class="shipping-option">
+                            <input type="radio" name="doprava" value="ppl">
+                            <div class="option-content">
+                                <div class="option-header">
+                                    <span class="option-icon">🚚</span>
+                                    <div class="option-info">
+                                        <strong>PPL kurýr</strong>
+                                        <p>Expresní doručení - 1-2 pracovní dny</p>
+                                    </div>
+                                </div>
+                                <div class="option-price">149 Kč</div>
+                            </div>
+                        </label>
+
+                        <label class="shipping-option free">
+                            <input type="radio" name="doprava" value="osobni-odber">
+                            <div class="option-content">
+                                <div class="option-header">
+                                    <span class="option-icon">🏪</span>
+                                    <div class="option-info">
+                                        <strong>Osobní odběr</strong>
+                                        <p>Prodejna Praha - Ihned k odběru</p>
+                                    </div>
+                                </div>
+                                <div class="option-price free-badge">ZDARMA</div>
+                            </div>
+                        </label>
+                    </div>
+
+                    <h2 style="margin-top: 40px;">Způsob platby</h2>
+                    <div class="payment-options">
+                        <label class="payment-option">
+                            <input type="radio" name="platba" value="karta" checked>
+                            <div class="option-content">
+                                <div class="option-header">
+                                    <span class="option-icon">💳</span>
+                                    <div class="option-info">
+                                        <strong>Platební karta online</strong>
+                                        <p>Bezpečná platba kartou (Visa, Mastercard)</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </label>
+
+                        <label class="payment-option">
+                            <input type="radio" name="platba" value="prevod">
+                            <div class="option-content">
+                                <div class="option-header">
+                                    <span class="option-icon">🏦</span>
+                                    <div class="option-info">
+                                        <strong>Bankovní převod</strong>
+                                        <p>Platba předem bankovním převodem</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </label>
+
+                        <label class="payment-option">
+                            <input type="radio" name="platba" value="dobirka">
+                            <div class="option-content">
+                                <div class="option-header">
+                                    <span class="option-icon">💵</span>
+                                    <div class="option-info">
+                                        <strong>Dobírka</strong>
+                                        <p>Platba při převzetí zásilky (+30 Kč)</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </label>
+
+                        <label class="payment-option">
+                            <input type="radio" name="platba" value="gpay">
+                            <div class="option-content">
+                                <div class="option-header">
+                                    <span class="option-icon">📱</span>
+                                    <div class="option-info">
+                                        <strong>Google Pay / Apple Pay</strong>
+                                        <p>Rychlá platba přes mobilní peněženku</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </label>
+                    </div>
+
+                    <div class="form-actions">
+                        <a href="kosik-krok1.html" class="btn-back">← Zpět na adresu</a>
+                        <a href="kosik-krok3.html" class="btn-primary">Pokračovat na shrnutí →</a>
+                    </div>
+                </div>
+
+               
+                <div class="order-summary">
+                    <h2>Váš košík</h2>
+                    <div class="cart-items">
+                        <div class="cart-item">
+                            <div class="cart-item-image">
+                               
+                            </div>
+                            <div class="cart-item-details">
+                                <h4>Home Jersey 2025 - Pastrňák #88</h4>
+                                <p class="cart-item-specs">Velikost: L, Barva: Černá</p>
+                                <div class="cart-item-price-row">
+                                    <span class="cart-item-quantity">1× 2 499 Kč</span>
+                                    <span class="cart-item-price">2 499 Kč</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="cart-item">
+                            <div class="cart-item-image">
+                              
+                            </div>
+                            <div class="cart-item-details">
+                                <h4>Čepice s logem</h4>
+                                <p class="cart-item-specs">Velikost: Uni</p>
+                                <div class="cart-item-price-row">
+                                    <span class="cart-item-quantity">1× 599 Kč</span>
+                                    <span class="cart-item-price">599 Kč</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cart-summary">
+                        <div class="summary-row">
+                            <span>Mezisoučet:</span>
+                            <span>3 098 Kč</span>
+                        </div>
+                        <div class="summary-row">
+                            <span>Doprava (Zásilkovna):</span>
+                            <span>79 Kč</span>
+                        </div>
+                        <div class="summary-total">
+                            <span>Celkem:</span>
+                            <span>3 177 Kč</span>
+                        </div>
+                    </div>
+
+                    <div class="delivery-address-box">
+                        <h4>Dodací adresa</h4>
+                        <p><strong>Jan Novák</strong></p>
+                        <p>Hlavní 123</p>
+                        <p>120 00 Praha</p>
+                        <p>Česká republika</p>
+                        <a href="kosik-krok1.html" class="edit-link">Upravit adresu</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>O nás</h4>
+                    <p>Oficiální fan shop Boston Bruins pro české a slovenské fanoušky.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Kontakt</h4>
+                    <p>Email: <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="e980878f86a98b9b9c80879a9a818699c78a93">[email&#160;protected]</a></p>
+                    <p>Tel: +420 123 456 789</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Sledujte nás</h4>
+                    <p>Facebook | Instagram | Twitter</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 202
